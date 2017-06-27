@@ -9,6 +9,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {ActionSheetsPage} from "../pages/action-sheets/action-sheets";
 import {AlertPage} from "../pages/alert/alert";
+import {CordovaPlugin} from "../pages/cordova-plugin/cordova-plugin";
+import {TestHttp} from "../pages/test-http/test-http";
 
 
 @Component({
@@ -34,7 +36,9 @@ export class MyApp {
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
       { title: 'Action Sheets', component: ActionSheetsPage},
-      { title: 'Alert', component: AlertPage}
+      { title: 'Alert', component: AlertPage},
+      { title: 'Test Http', component: TestHttp},
+      { title: 'Test Cordova Plugin', component: CordovaPlugin},
     ];
   }
 

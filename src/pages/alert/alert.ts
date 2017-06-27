@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { AlertController } from 'ionic-angular';
+import { Geolocation } from 'ionic-native';
+
+
+declare var alert_dialog;
 
 @Component({
   selector: 'page-alert',

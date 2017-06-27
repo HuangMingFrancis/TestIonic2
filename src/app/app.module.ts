@@ -11,6 +11,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {ActionSheetsPage} from "../pages/action-sheets/action-sheets";
 import {AlertPage} from "../pages/alert/alert";
+import {TestHttp} from "../pages/test-http/test-http";
+import {CordovaPlugin} from "../pages/cordova-plugin/cordova-plugin";
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,14 @@ import {AlertPage} from "../pages/alert/alert";
     ItemDetailsPage,
     ListPage,
     ActionSheetsPage,
-    AlertPage
+    AlertPage,
+    TestHttp,
+    CordovaPlugin
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -32,7 +38,9 @@ import {AlertPage} from "../pages/alert/alert";
     ItemDetailsPage,
     ListPage,
     ActionSheetsPage,
-    AlertPage
+    AlertPage,
+    TestHttp,
+    CordovaPlugin
   ],
   providers: [
     StatusBar,
